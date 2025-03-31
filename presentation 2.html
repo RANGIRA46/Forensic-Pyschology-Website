@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intimidation Slideshow</title>
+    <style>
+        body, html {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url(../img/pexels-mediocrememories-2157191.jpg); /* Background image */
+            background-size: cover; /* Cover to fill the whole background */
+            background-repeat: no-repeat; /* Prevent repeating the image */
+            background-position: center; /* Center the image */
+            background-color: #000; /* Fallback background color */
+            color: #ffffff;
+            overflow: hidden;
+        }
+        .slideshow-container {
+            width: 900px;
+            height: 550px;
+            position: relative;
+            background-color: rgba(51, 51, 51, 1); /* Set to solid dark grey */
+            color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 20px;
+            text-align: left; /* Align text to left */
+        }
+        .navigation-bar {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
+            z-index: 10;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 10px;
+        }
+        .presentation-name {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        .slide {
+            display: none;
+            width: 100%;
+            max-height: 100%;
+        }
+        .slide.active {
+            display: block;
+        }
+        .slide-content {
+            padding: 0 20px;
+            text-align: left; /* Align text to left */
+        }
+        .slide h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        .slide p, .slide ul {
+            font-size: 1.2em;
+            line-height: 1.4em;
+            margin: 0;
+        }
+        .slide ul {
+            list-style-type: none;
+            padding-left: 0;
+            text-align: left; /* Align list items to left */
+        }
+        .navigation {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 2em;
+            user-select: none;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 3px;
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
+        .pagination {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1em;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .progress-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 5px;
+            background-color: #4b4b4b;
+            width: 0%;
+            transition: width 30s linear; /* Set the transition duration to 30 seconds */
+        }
+        .other-presentations {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+        }
+        .btn {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="slideshow-container">
+    <div class="navigation-bar">
+        <a href="index.html" class="nav-link">Home</a>
+    </div>
+    
+    <div class="presentation-name">
+        Intimidation: Intersections with Psychology, Criminology, and Criminalistics
+    </div>
+
+    <!-- Slide 1 -->
+    <div class="slide active">
+        <div class="slide-content">
+            <h2>Intimidation: Intersections with Psychology, Criminology, and Criminalistics</h2>
+            
+        </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Introduction</h2>
+            <p>Intimidation is a complex behavior affecting mental health, crime rates, and evidence gathering.</p>
+            <ul>
+                <li><strong>Psychology</strong>: Mental health and interpersonal impact.</li>
+                <li><strong>Criminology</strong>: Criminal behavior and societal impact.</li>
+                <li><strong>Criminalistics</strong>: Physical evidence analysis.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Intimidation in Psychology</h2>
+            <ul>
+                <li>Power dynamics disrupt mental health and social functioning.</li>
+                <li>Effects on victims: fear, anxiety, low self-esteem.</li>
+                <li>Potential disorders: PTSD, depression, anxiety.</li>
+                <li>Motivations: control, insecurity compensation.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Psychological Impact on Victims</h2>
+            <ul>
+                <li>Emotional effects: Anxiety, helplessness.</li>
+                <li>Long-term risks: Chronic mental health issues.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Intimidation in Criminology</h2>
+            <ul>
+                <li>Examines intimidation in criminal behavior contexts.</li>
+                <li>Common contexts: Gang violence, domestic abuse, workplace harassment.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Types of Intimidation in Criminal Contexts</h2>
+            <ul>
+                <li>Coercive Intimidation: Organized crime, silence enforcement.</li>
+                <li>Domestic Violence: Emotional and physical threats.</li>
+                <li>Societal impact: Fear, crime underreporting, normalization.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 7 -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Intimidation in Criminalistics</h2>
+            <ul>
+                <li>Forensic analysis of intimidation-related evidence.</li>
+                <li>Evidence types: Written threats, digital communications.</li>
+                <li>Purpose: Support legal cases, victim protection.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 8 -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Interventions and Support</h2>
+            <ul>
+                <li>Psychological support: Therapy options for victims.</li>
+                <li>Legal actions: Restraining orders and reporting incidents.</li>
+                <li>Community resources: Hotlines and advocacy groups.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 9 -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Preventive Measures</h2>
+            <ul>
+                <li>Awareness programs in schools and workplaces.</li>
+                <li>Policy advocacy for stronger laws against intimidation.</li>
+                <li>Training for law enforcement on handling intimidation cases.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Navigation Controls -->
+    <div class="navigation navigation-left prev" onclick="changeSlide(-1)">&#10094;</div>
+    <div class="navigation navigation-right next" onclick="changeSlide(1)">&#10095;</div>
+
+    <!-- Pagination -->
+    <div class="pagination" id="pagination"></div>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Other Presentations Buttons -->
+    <div class="other-presentations">
+        <a href="presentation 1.html" class="btn">Reasearch 1</a>
+        <a href="presentation 3.html" class="btn">Reasearch 3</a>
+    </div>
+</div>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+    const progressBar = document.getElementById('progressBar');
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+        resetProgressBar();
+        updatePagination();
+    }
+
+    function changeSlide(direction) {
+        currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+        showSlide(currentSlide);
+    }
+
+    function updatePagination() {
+        const pagination = document.getElementById('pagination');
+        pagination.innerHTML = `${currentSlide + 1} / ${totalSlides}`;
+    }
+
+    let slideInterval;
+
+    function startSlideshow() {
+        slideInterval = setInterval(() => {
+            changeSlide(1);
+        }, 30000); // 30 seconds per slide
+    }
+
+    function stopSlideshow() {
+        clearInterval(slideInterval);
+    }
+
+    function resetProgressBar() {
+        progressBar.style.width = '0%';
+        setTimeout(() => {
+            progressBar.style.width = '100%';
+        }, 100);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        showSlide(currentSlide);
+        startSlideshow();
+    });
+</script>
+</body>
+</html>

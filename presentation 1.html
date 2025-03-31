@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intimidation: A Psychological Perspective</title>
+    <style>
+        body, html {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url(../img/pexels-mediocrememories-2157191.jpg); /* Background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #000;
+            color: #ffffff;
+            overflow: hidden;
+        }
+        .slideshow-container {
+            width: 900px;
+            height: 550px;
+            position: relative;
+            background-color: rgba(51, 51, 51, 1);
+            color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 20px;
+            text-align: left;
+        }
+        .navigation-bar {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
+            z-index: 10;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 10px;
+        }
+        .presentation-name {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        .slide {
+            display: none;
+            width: 100%;
+            max-height: 100%;
+        }
+        .slide.active {
+            display: block;
+        }
+        .slide-content {
+            padding: 0 20px;
+            text-align: left;
+        }
+        .slide h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        .slide p, .slide ul {
+            font-size: 1.2em;
+            line-height: 1.4em;
+            margin: 0;
+        }
+        .slide ul {
+            list-style-type: none;
+            padding-left: 0;
+            text-align: left;
+        }
+        .navigation {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 2em;
+            user-select: none;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 3px;
+            z-index: 20;
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
+        .pagination {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1em;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .progress-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 5px;
+            background-color: #4b4b4b;
+            width: 0%;
+            transition: width 30s linear;
+        }
+        .bottom-buttons {
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            right: 20px;
+            display: flex;
+            justify-content: space-between;
+            z-index: 10;
+        }
+        .bottom-buttons a {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="slideshow-container">
+    <div class="navigation-bar">
+        <a href="index.html" class="nav-link">Home</a>
+    </div>
+    
+    <div class="presentation-name">
+        Intimidation: A Psychological Perspective
+    </div>
+
+    <!-- Slide 1 -->
+    <div class="slide active">
+        <div class="slide-content">
+            <h2>Introduction to Intimidation</h2>
+            <p>Intimidation is defined as the act of instilling fear or a sense of inferiority in others, often through aggressive behavior, threats, or coercive tactics.</p>
+            <ul>
+                <li><strong>Power Dynamics:</strong> Intimidation often revolves around exerting control over another person.</li>
+                <li><strong>Contexts:</strong> It can be seen in personal relationships, workplaces, schools, and social interactions.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Forms of Intimidation</h2>
+            <ul>
+                <li><strong>Physical Intimidation:</strong> Involves threats or actual physical harm to instill fear.</li>
+                <li><strong>Verbal Intimidation:</strong> Includes threats, bullying, or derogatory remarks targeting confidence.</li>
+                <li><strong>Emotional Intimidation:</strong> Manipulating emotions like guilt, shame, or anxiety, including tactics like gaslighting.</li>
+                <li><strong>Social Intimidation:</strong> Occurs in group settings where an individual is ostracized or pressured to conform.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Psychological Effects of Intimidation</h2>
+            <ul>
+                <li><strong>Anxiety & Depression:</strong> Victims often suffer from heightened stress and decreased self-worth.</li>
+                <li><strong>Chronic Stress:</strong> Prolonged exposure can lead to PTSD and related health issues.</li>
+                <li><strong>Helplessness:</strong> The fear and anxiety created by intimidation hinder the ability to seek help or assert oneself.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Motivations Behind Intimidation</h2>
+            <ul>
+                <li><strong>Insecurity:</strong> Many intimidators are driven by a need to assert dominance due to their own insecurities.</li>
+                <li><strong>Learned Behavior:</strong> Intimidation can be learned from past experiences or modeled after authority figures.</li>
+                <li><strong>Power & Control:</strong> The behavior is often rooted in a desire for control over others.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Addressing Intimidation</h2>
+            <ul>
+                <li><strong>Open Communication:</strong> Promoting communication and understanding can help mitigate the impact.</li>
+                <li><strong>Support & Empathy:</strong> Creating supportive environments encourages victims to report intimidation.</li>
+                <li><strong>Education:</strong> Awareness programs are essential in schools and workplaces to recognize and address intimidation.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Conclusion</h2>
+            <ul>
+                <li><strong>Psychological Impact:</strong> Intimidation can have long-lasting effects on both the victim and the perpetrator.</li>
+                <li><strong>Action Steps:</strong> Education, intervention, and creating supportive spaces can help reduce the prevalence of intimidation.</li>
+                <li><strong>Healthier Relationships:</strong> Fostering healthier interpersonal relationships can lead to a more supportive community.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Previous and Next Buttons -->
+    <div class="navigation prev" onclick="moveSlide(-1)">&#10094;</div>
+    <div class="navigation next" onclick="moveSlide(1)">&#10095;</div>
+
+    <!-- Slide Progress Bar -->
+    <div class="progress-bar"></div>
+
+    <!-- Pagination -->
+    <div class="pagination">
+        Slide <span id="slide-number">1</span>  /6
+    </div>
+
+    <!-- Bottom Navigation Buttons -->
+    <div class="bottom-buttons">
+        <a href="presentation 2.html">Research 2</a>
+        <a href="presentation 3.html">Research 3</a>
+    </div>
+</div>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const slideNumber = document.getElementById('slide-number');
+    const progressBar = document.querySelector('.progress-bar');
+
+    function showSlide(index) {
+        if (index < 0) index = slides.length - 1;
+        if (index >= slides.length) index = 0;
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[index].classList.add('active');
+        currentSlide = index;
+        slideNumber.textContent = currentSlide + 1;
+        progressBar.style.width = ((currentSlide + 1) / slides.length) * 100 + '%';
+    }
+
+    function moveSlide(step) {
+        showSlide(currentSlide + step);
+    }
+
+    // Initialize the first slide
+    showSlide(currentSlide);
+
+    // Auto slide transition every 30 seconds
+    setInterval(() => {
+        moveSlide(1);
+    }, 30000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Victims of Rape Fail to Report</title>
+    <style>
+        body, html {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url(../img/pexels-mediocrememories-2157191.jpg); /* Background image */
+            background-size: cover; /* Cover to fill the whole background */
+            background-repeat: no-repeat; /* Prevent repeating the image */
+            background-position: center; /* Center the image */
+            background-color: #000; /* Fallback background color */
+            color: #ffffff;
+            overflow: hidden;
+        }
+        .slideshow-container {
+            width: 900px;
+            height: 550px;
+            position: relative;
+            background-color: rgba(51, 51, 51, 1); /* Set to solid dark grey */
+            color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 20px;
+            text-align: left; /* Align text to left */
+        }
+        .navigation-bar {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
+            z-index: 10;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 10px;
+        }
+        .nav-button {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            background-color: #333;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin: 0 10px;
+            display: inline-block;
+            transition: background-color 0.3s;
+            position: absolute;
+            bottom: 10px; /* Position the buttons at the bottom */
+        }
+        .nav-button:hover {
+            background-color: #555;
+        }
+        .presentation-name {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        .slide {
+            display: none;
+            width: 100%;
+            max-height: 100%;
+        }
+        .slide.active {
+            display: block;
+        }
+        .slide-content {
+            padding: 0 20px;
+            text-align: left; /* Align text to left */
+        }
+        .slide h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        .slide p, .slide ul {
+            font-size: 1.2em;
+            line-height: 1.4em;
+            margin: 0;
+        }
+        .slide ul {
+            list-style-type: none;
+            padding-left: 0;
+            text-align: left; /* Align list items to left */
+        }
+        .navigation {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 2em;
+            user-select: none;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 3px;
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
+        .pagination {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1em;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .progress-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 5px;
+            background-color: #4b4b4b;
+            width: 0%;
+            transition: width 30s linear; /* Set the transition duration to 30 seconds */
+        }
+
+        /* Position Presentation 1 Button on Left */
+        .nav-button.left {
+            left: 10px; /* Position the button on the left */
+        }
+
+        /* Position Presentation 3 Button on Right */
+        .nav-button.right {
+            right: 10px; /* Position the button on the right */
+        }
+    </style>
+</head>
+<body>
+
+<div class="slideshow-container">
+    <div class="navigation-bar">
+        <a href="index.html" class="nav-link">Home</a>
+    </div>
+    
+    <div class="presentation-name">
+        Why Victims of Rape Fail to Report
+    </div>
+
+    <!-- Slide 1 -->
+    <div class="slide active">
+        <div class="slide-content">
+            <h2>Introduction</h2>
+            <p>Rape is a violent crime involving non-consensual sexual intercourse or penetration. It can occur in various contexts, typically involving the use of force, intimidation, or manipulation.</p>
+            <ul>
+                <li><strong>Prevalence:</strong> Nearly 1 in 5 women and 1 in 71 men experience rape at some point in their lives.</li>
+                <li><strong>Underreporting Rates:</strong> Only a fraction of these cases are reported to authorities.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Feelings of Helplessness</h2>
+            <ul>
+                <li><strong>Loss of Control:</strong> The trauma of rape can leave victims feeling powerless, making reporting feel like an additional loss of agency.</li>
+                <li><strong>Complex Legal Processes:</strong> Fear of navigating a complicated legal system can deter victims from coming forward.</li>
+                <li><strong>Uncertainty About Outcomes:</strong> Victims may be unsure about what will happen after reporting, creating anxiety about the process.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Distrust in Authorities</h2>
+            <ul>
+                <li><strong>Negative Past Experiences:</strong> Some victims may have faced dismissive or hostile reactions from law enforcement before.</li>
+                <li><strong>Fear of Not Being Believed:</strong> Many worry that their experiences will be trivialized or dismissed by authorities.</li>
+                <li><strong>Perceived Ineffectiveness:</strong> Victims may doubt that reporting will lead to justice or meaningful action.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Trauma Responses</h2>
+            <ul>
+                <li><strong>PTSD Symptoms:</strong> Flashbacks, anxiety, and emotional numbness can hinder a victim’s ability to report.</li>
+                <li><strong>Dissociation:</strong> Some victims experience dissociation, complicating their recollection of details.</li>
+                <li><strong>Impact on Memory:</strong> Trauma can affect memory, making it difficult for victims to articulate their experiences clearly.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Stigma and Shame</h2>
+            <ul>
+                <li><strong>Fear of Judgment:</strong> Victims often worry about being blamed or viewed negatively by society.</li>
+                <li><strong>Internalized Shame:</strong> Many feel ashamed about the assault, believing it reflects on their character or choices.</li>
+                <li><strong>Social Isolation:</strong> The stigma can lead to withdrawal from social networks, making reporting feel more daunting.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Cultural Influences</h2>
+            <ul>
+                <li><strong>Cultural Norms:</strong> Some communities may have norms that discourage open discussion about sexual violence.</li>
+                <li><strong>Normalization of Violence:</strong> In certain cultures, sexual violence may be seen as an unfortunate but accepted reality.</li>
+                <li><strong>Victim-Blaming Attitudes:</strong> Cultural perceptions that blame the victim can discourage survivors from coming forward.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 7 -->
+    <div class="slide">
+        <div class="slide-content">
+            <h2>Conclusion</h2>
+            <p>Rape survivors face numerous barriers when deciding whether to report the crime. Addressing these barriers requires both societal and systemic change, including better support for victims, more sensitive law enforcement training, and cultural shifts towards greater understanding and empathy.</p>
+        </div>
+    </div>
+
+    <div class="navigation prev" onclick="changeSlide(-1)">&#10094;</div>
+    <div class="navigation next" onclick="changeSlide(1)">&#10095;</div>
+
+    <div class="pagination">
+        <span id="pagination">1 / 7</span>
+    </div>
+    <div class="progress-bar" id="progress-bar"></div>
+
+    <!-- Buttons for navigation to other presentations -->
+    <a href="presentation 1.html" class="nav-button left">Research 1</a>
+    <a href="presentation 2.html" class="nav-button right">Research 2</a>
+</div>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const pagination = document.getElementById('pagination');
+    const progressBar = document.getElementById('progress-bar');
+    
+    function changeSlide(direction) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide += direction;
+        
+        if (currentSlide >= slides.length) {
+            currentSlide = 0;
+        } else if (currentSlide < 0) {
+            currentSlide = slides.length - 1;
+        }
+        
+        slides[currentSlide].classList.add('active');
+        pagination.innerText = `${currentSlide + 1} / ${slides.length}`;
+        progressBar.style.width = (100 / slides.length) * (currentSlide + 1) + '%';
+    }
+
+    setInterval(() => {
+        changeSlide(1);
+    }, 30000); // Auto change slide every 30 seconds
+</script>
+
+</body>
+</html>
