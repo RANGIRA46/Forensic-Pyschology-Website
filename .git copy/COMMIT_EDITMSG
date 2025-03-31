@@ -1,0 +1,66 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+#
+# Initial commit
+#
+# Changes to be committed:
+#	new file:   ABOUT THIS TEMPLATE.txt
+#	new file:   css/bootstrap.min.css
+#	new file:   css/tooplate-style.css
+#	new file:   fontawesome/css/fontawesome-all.min.css
+#	new file:   fontawesome/webfonts/fa-brands-400.eot
+#	new file:   fontawesome/webfonts/fa-brands-400.svg
+#	new file:   fontawesome/webfonts/fa-brands-400.ttf
+#	new file:   fontawesome/webfonts/fa-brands-400.woff
+#	new file:   fontawesome/webfonts/fa-brands-400.woff2
+#	new file:   fontawesome/webfonts/fa-regular-400.eot
+#	new file:   fontawesome/webfonts/fa-regular-400.svg
+#	new file:   fontawesome/webfonts/fa-regular-400.ttf
+#	new file:   fontawesome/webfonts/fa-regular-400.woff
+#	new file:   fontawesome/webfonts/fa-regular-400.woff2
+#	new file:   fontawesome/webfonts/fa-solid-900.eot
+#	new file:   fontawesome/webfonts/fa-solid-900.svg
+#	new file:   fontawesome/webfonts/fa-solid-900.ttf
+#	new file:   fontawesome/webfonts/fa-solid-900.woff
+#	new file:   fontawesome/webfonts/fa-solid-900.woff2
+#	new file:   "img/DALL\302\267E 2024-10-24 07.17.34 - A refined, darker landscape-oriented representation of forensic psychology. The image should feature a dim, moody crime scene with 'DO NOT CROSS' yell.webp"
+#	new file:   "img/DALL\302\267E 2024-10-24 08.37.23 - A realistic and slightly darker-toned team portrait for a forensic psychology website featuring diverse individuals with a focus on Black professional.webp"
+#	new file:   "img/DALL\302\267E 2024-10-24 09.07.14 - A hyper-realistic depiction of a crime scene in a dark urban alleyway at night. The wet ground reflects flashing police lights in red and blue. Yellow.webp"
+#	new file:   img/Thumbs.db
+#	new file:   img/baraka.jpeg
+#	new file:   img/jambo.jpeg
+#	new file:   img/pexels-mediocrememories-2157191.jpg
+#	new file:   img/pexels-printexstar-11680763.jpg
+#	new file:   img/pop-bg.jpg
+#	new file:   img/queen.jpeg
+#	new file:   img/shyaka.jpeg
+#	new file:   img/underline.png
+#	new file:   img/yakin.jpeg
+#	new file:   index.html
+#	new file:   js/anime.min.js
+#	new file:   js/jquery-3.2.1.slim.min.js
+#	new file:   js/main.js
+#	new file:   presentation 1.html
+#	new file:   presentation 2.html
+#	new file:   presentation 3.html
+#	new file:   slick/ajax-loader.gif
+#	new file:   slick/config.rb
+#	new file:   slick/fonts/slick.eot
+#	new file:   slick/fonts/slick.svg
+#	new file:   slick/fonts/slick.ttf
+#	new file:   slick/fonts/slick.woff
+#	new file:   slick/slick-theme.css
+#	new file:   slick/slick-theme.less
+#	new file:   slick/slick-theme.scss
+#	new file:   slick/slick.css
+#	new file:   slick/slick.js
+#	new file:   slick/slick.less
+#	new file:   slick/slick.min.js
+#	new file:   slick/slick.scss
+#
+# Changes not staged for commit:
+#	deleted:    img/pop-bg.jpg
+#
